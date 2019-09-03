@@ -65,7 +65,7 @@ GET amount_of_rain_in
 
 CALCULATE length_of_roof_in = length_of_roof_ft * 12
 CALCULATE width_of_roof_in = width_of_roof_ft * 12
-CALCULATE total_rain = length_of_roof_in * width_of_roof_in * amount_of_rain_in * c_inches_to_gallons
+CALCULATE total_rain = length_of_roof_in * width_of_roof_in * amount_of_rain_in / c_inches_to_gallons
 DISPLAY "Total gallons of rain on the roof: " & total_rain
 
 
