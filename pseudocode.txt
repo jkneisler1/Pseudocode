@@ -1,0 +1,81 @@
+1. Find the average score
+
+IPO
+===
+Input		Process			Output
+==============================================
+number
+
+		calculate sum
+		update number
+		calculate average
+
+					print avarage
+Pseudocode
+==========
+DECLARE Integer counter
+DECLARE Real	number
+DECLARE	Real	sum
+DECLARE Real	average
+
+SET counter = 0
+SET sum = 0 
+SET average = 0
+DOWHILE counter <= 10
+	PROMPT the user for a number
+	GET number
+	UPDATE sum: sum = sum + number
+	UPDATE counter: counter = counter + 1
+END
+
+CALCULATE average: avarage = sum / counter
+DISPLAY avarage: print average
+
+
+2. How much water runs off the roof
+===================================
+Input		Process			Output
+==============================================
+length_of_roof in feet
+width_of_roof in feet
+amount_of_rain in inches
+
+		Convert length_of_roof to inches
+		Convert width_of_roof to inches
+		Multiply the length_of_roof by width_of_roof by the inches of rain
+
+					Total rainfall on the roof
+
+Pseudocode
+==========
+DECLARE Integer length_of_roof_ft
+DECLARE Integer width_of_roof_ft
+DECLARE Integer length_of_roof_in
+DECLARE Integer width_of_roof_in
+DECLARE Integer amount_of_rain_in
+DECLARE Real total_rain
+DECLARE CONSTANT Integer c_inches_to_gallons = 231
+
+PROMPT What is the length of the roof in feet?
+GET Integer length_of_roof_ft
+PROMPT What is the width of the roof in feet?
+GET Integer width_of_roof_ft
+PROMPT How much rain fell on the roof in inches?
+GET amount_of_rain_in
+
+CALCULATE length_of_roof_in = length_of_roof_ft * 12
+CALCULATE width_of_roof_in = width_of_roof_ft * 12
+CALCULATE total_rain = length_of_roof_in * width_of_roof_in * amount_of_rain_in * c_inches_to_gallons
+DISPLAY "Total gallons of rain on the roof: " & total_rain
+
+
+
+
+
+
+
+
+
+
+
+
